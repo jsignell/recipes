@@ -14,7 +14,6 @@ source:
       - patches/disable_macosx_backend.patch
       - patches/hardcoded-font-cache.patch
       - patches/fix-threading.patch
-      - patches/use_just_shuffle.patch
   - path: mplsetup.cfg
   - path: setupext.py
 
@@ -68,4 +67,3 @@ steps:
       run:
         - python
         - "{{ pin_subpackage('matplotlib-base', exact=True) }}"
-
